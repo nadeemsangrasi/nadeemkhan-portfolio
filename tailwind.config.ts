@@ -8,11 +8,11 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      "primary-black": "#ococod",
-      "secondary-black": "#131313",
+      "primary-black": "#0C0C0D",
+      "secondary-black": "#211F23",
       "primary-gray": "#272727",
       "secondary-gray": "#6f6f6f",
-      "primary-white": "#111111",
+      "primary-white": "#FFFFFF",
       "secondary-white": "#c8c8c8",
       "seagreen": "#5fb9bo",
       "purple": "#b292ff",

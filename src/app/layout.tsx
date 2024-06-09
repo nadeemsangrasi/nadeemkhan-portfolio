@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layouts/Header";
 
-const raleway = Raleway({ weight: "400", style: "normal", subsets: ["latin"] });
+const raleway = Raleway({ style: "normal", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "nadeem portfolio",
@@ -16,7 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={raleway.className}>{children}</body>
+      <body className={raleway.className}>
+        <div className="bg-primary-black">
+          <Header />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
