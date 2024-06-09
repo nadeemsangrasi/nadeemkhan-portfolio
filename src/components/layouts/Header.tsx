@@ -13,11 +13,11 @@ const Header = () => {
   );
   return (
     <Wrapper>
-      <div className="w-1/2 bg-secondary-black overflow-hidden text-secondary-white mx-auto rounded-full h-14 flex items-center justify-center gap-4">
+      <div className="w-full md:w-1/2 bg-secondary-black overflow-hidden text-secondary-white mx-auto rounded-full h-14 flex items-center justify-center gap-4">
         <div className="pages">
-          <ul className="flex gap-6 ">
+          <ul className="flex sm:gap-6 gap-2">
             <li
-              className={`text-xl font-medium hover:underline ${
+              className={`sm:text-xl font-medium hover:underline ${
                 color === "home"
                   ? "transition all ease 0.5s duration-700 text-secondary-white"
                   : "text-purple"
@@ -28,7 +28,7 @@ const Header = () => {
               <Link href={"#"}>Home</Link>{" "}
             </li>
             <li
-              className={`text-xl font-medium hover:underline ${
+              className={`sm:text-xl font-medium hover:underline ${
                 color === "education"
                   ? "transition all ease 0.5s duration-700 text-secondary-white"
                   : "text-purple"
@@ -39,7 +39,7 @@ const Header = () => {
               <Link href={"#"}>education</Link>{" "}
             </li>
             <li
-              className={`text-xl font-medium hover:underline ${
+              className={`  sm:text-xl font-medium hover:underline ${
                 color === "experiance"
                   ? "transition all ease 0.5s duration-700 text-secondary-white "
                   : "text-purple"
@@ -51,7 +51,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="flex gap-4">
+        <div className="lg:flex gap-4 hidden  ">
           <Link href={"#"}>
             <Image src={githubIcon} alt="githubIcon"></Image>
           </Link>

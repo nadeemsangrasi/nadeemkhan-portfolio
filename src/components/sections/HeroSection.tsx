@@ -4,10 +4,12 @@ import Wrapper from "../shared/Wrapper";
 const HeroSection = () => {
   return (
     <Wrapper>
-      <div className="my-4 mx-8 flex items-center justify-between w-full">
-        <div className="w-1/2">
-          <h1 className="text-5xl text-primary-white py-7">Hi, I'm Nadeem</h1>
-          <p className="text-secondary-gray font-light text-2xl leading-10 hover:font-extralight">
+      <div className="my-4 md:mx-8 md:flex items-center justify-between w-full">
+        <div className="w-full md:w-1/2 py-6 md:py-0">
+          <h1 className="text-5xl md:text-6xl text-primary-white py-7">
+            Hi, I'm Nadeem
+          </h1>
+          <p className="text-secondary-gray font-light text-xl md:text-2xl leading-9 md:leading-10 hover:font-extralight">
             Lorem ipsum
             <span className="text-primary-white"> dolor </span> sit
             <span className="text-primary-white"> amet consectetur </span>
@@ -17,11 +19,11 @@ const HeroSection = () => {
           <button className=" px-4 py-2 my-7 font-semibold rounded-full  bg-primary-white text-primary-black">
             Download CV
           </button>
-          <span className="text-purple px-6 font-medium text-lg">
+          <span className="text-purple px-2 md:px-6 font-medium text-lg md:inline-block block">
             <Link href={"#"}>see experiances</Link>
           </span>
         </div>
-        <div className="image w-[38%]">
+        <div className=" w-full md:w-1/2 lg:w-[38%]">
           <img src="/myImage.png" alt="img" className="w-full h-full" />
         </div>
       </div>
