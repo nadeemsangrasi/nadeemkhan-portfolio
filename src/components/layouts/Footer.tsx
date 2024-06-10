@@ -4,7 +4,7 @@ import Link from "next/link";
 import githubIcon from "@/assets/icons/github.svg";
 import linkedinIcon from "@/assets/icons/linkedin.svg";
 import mailIcon from "@/assets/icons/mail.svg";
-const Footer = () => {
+const Footer = (): React.JSX.Element => {
   return (
     <Wrapper>
       <div className="w-full md:w-10/12 bg-secondary-black overflow-hidden text-secondary-white mx-auto rounded-full h-14 flex items-center justify-between gap-4 px-4">

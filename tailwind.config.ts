@@ -23,6 +23,7 @@ const config: Config = {
       "heading-1": "#C69AFF",
       "heading-2": "#9F53FF",
       "heading-3": "#6104D6",
+      "expCard": "#131313"
     },
     extend: {
       backgroundImage: {

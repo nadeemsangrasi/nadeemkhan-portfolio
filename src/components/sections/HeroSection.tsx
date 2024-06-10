@@ -2,7 +2,8 @@ import Link from "next/link";
 import Wrapper from "../shared/Wrapper";
 import Image from "next/image";
 import myImage from "@/assets/images/myImage.png";
-const HeroSection = () => {
+import Button from "../shared/Button";
+const HeroSection = (): React.JSX.Element => {
   return (
     <Wrapper>
       <div className="md:my-4 md:mx-8 flex flex-col-reverse  md:flex-row items-center justify-between w-full">
@@ -17,9 +18,7 @@ const HeroSection = () => {
             adipisicing elit. Iure similique delectus autem ab, ut distinctio
             voluptatum! Dignissimos ullam reiciendis asperiores!
           </p>
-          <button className=" px-4 py-2 my-7 font-semibold rounded-full  bg-primary-white text-primary-black">
-            Download CV
-          </button>
+          <Button title="Download CV" />
           <span className="text-purple px-2 md:px-6 font-medium text-lg md:inline-block block">
             <Link href={"#"}>see experiances</Link>
           </span>

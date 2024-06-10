@@ -3,7 +3,7 @@ import HeroCards from "@/components/sections/HeroCards";
 import HeroSection from "@/components/sections/HeroSection";
 import Technologies from "@/components/sections/Technologies";
 
-export default function Home() {
+export default function Home(): React.JSX.Element {
   return (
     <div>
       <HeroSection />

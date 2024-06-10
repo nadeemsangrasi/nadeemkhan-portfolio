@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Wrapper from "../shared/Wrapper";
 import reactLogo from "@/assets/logos/reactjs.svg";
-const Technologies = () => {
+const Technologies = (): React.JSX.Element => {
   return (
     <Wrapper>
       <div className="my-12">

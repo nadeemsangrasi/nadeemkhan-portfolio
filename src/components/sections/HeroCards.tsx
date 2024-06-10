@@ -3,10 +3,11 @@ import { useRef, useState } from "react";
 import Wrapper from "../shared/Wrapper";
 import Image from "next/image";
 import nextLogo from "@/assets/logos/nextjs.svg";
+import typescriptLogo from "@/assets/logos/typescript.svg";
 import reactLogo from "@/assets/logos/reactjs.svg";
 import javasctiptLogo from "@/assets/logos/javaScript.svg";
 
-const HeroCards = () => {
+const HeroCards = (): React.JSX.Element => {
   const [card, setCard] = useState<"card1" | "card2" | "card3" | "card4">(
     "card1"
   );
@@ -47,6 +48,14 @@ const HeroCards = () => {
                 />
                 <h1 className="font-bold text-3xl px-8 py-4">Next.Js</h1>
               </div>
+              <div className="text-center sm:text-left w-[15%] h-[15%] sm:w-[300px] sm:h-[250px] bg-card-3 p-4 rounded-[60px]">
+                <Image
+                  src={typescriptLogo}
+                  alt="javascriptLogo"
+                  className="mx-auto sm:mx-0 w-[30%] h-[30%] sm:w-1/2 sm:h-1/2 pt-4"
+                />
+                <h1 className="font-bold text-3xl px-8 py-4">TypeScript</h1>
+              </div>
               <div className="text-center sm:text-left w-[15%] h-[15%] sm:w-[300px] sm:h-[250px] bg-card-2 p-4 rounded-[60px]">
                 <Image
                   src={reactLogo}
@@ -62,14 +71,6 @@ const HeroCards = () => {
                   className="mx-auto sm:mx-0 w-[30%] h-[30%] sm:w-1/2 sm:h-1/2 pt-4"
                 />
                 <h1 className="font-bold text-3xl px-8 py-4">JavaScript</h1>
-              </div>
-              <div className="text-center sm:text-left w-[15%] h-[15%] sm:w-[300px] sm:h-[250px] bg-card-4 p-4 rounded-[60px]">
-                <Image
-                  src={nextLogo}
-                  alt="nextjsLogo"
-                  className="mx-auto sm:mx-0 w-[30%] h-[30%] sm:w-1/2 sm:h-1/2 pt-4"
-                />
-                <h1 className="font-bold text-3xl px-8 py-4">Next.Js</h1>
               </div>
             </div>
           </div>

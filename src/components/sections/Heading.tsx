@@ -1,6 +1,6 @@
 import Wrapper from "../shared/Wrapper";
 
-const Heading = () => {
+const Heading = (): React.JSX.Element => {
   return (
     <Wrapper>
       <div className="text-center my-24">
