@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Wrapper from "../shared/Wrapper";
-
+import Image from "next/image";
+import myImage from "@/assets/images/myImage.png";
 const HeroSection = () => {
   return (
     <Wrapper>
-      <div className="my-4 md:mx-8 md:flex items-center justify-between w-full">
-        <div className="w-full md:w-1/2 py-6 md:py-0">
+      <div className="md:my-4 md:mx-8 flex flex-col-reverse  md:flex-row items-center justify-between w-full">
+        <div className="w-full md:w-1/2 py-6 md:py-0 mx-auto text-center md:text-left">
           <h1 className="text-5xl md:text-6xl text-primary-white py-7">
             Hi, I'm Nadeem
           </h1>
@@ -23,8 +24,8 @@ const HeroSection = () => {
             <Link href={"#"}>see experiances</Link>
           </span>
         </div>
-        <div className=" w-full md:w-1/2 lg:w-[38%]">
-          <img src="/myImage.png" alt="img" className="w-full h-full" />
+        <div className="w-full md:w-1/2 lg:w-[38%]">
+          <Image src={myImage} alt="img" className="w-full h-full" />
         </div>
       </div>
     </Wrapper>

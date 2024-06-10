@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layouts/Header";
+import Footer from "@/components/layouts/Footer";
 
 const raleway = Raleway({ style: "normal", subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
         <div className="bg-primary-black">
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>

@@ -16,6 +16,13 @@ const config: Config = {
       "secondary-white": "#c8c8c8",
       "seagreen": "#5fb9bo",
       "purple": "#b292ff",
+      "card-1": "#C3C99E",
+      "card-2": "#7D9CA5",
+      "card-3": "#C2C2C2",
+      "card-4": "#C0E5D7",
+      "heading-1": "#C69AFF",
+      "heading-2": "#9F53FF",
+      "heading-3": "#6104D6",
     },
     extend: {
       backgroundImage: {
