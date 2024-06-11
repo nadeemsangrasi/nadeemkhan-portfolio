@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Wrapper from "../shared/Wrapper";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import githubIcon from "@/assets/icons/github.svg";
 import linkedinIcon from "@/assets/icons/linkedin.svg";
@@ -65,13 +65,13 @@ const Header = (): React.JSX.Element => {
         </div>
         <div className="lg:flex gap-4 hidden  ">
           <Link href={"#"}>
-            <Image src={githubIcon} alt="githubIcon"></Image>
+            <Image src={githubIcon} alt="githubIcon" />
           </Link>
           <Link href={"#"}>
-            <Image src={linkedinIcon} alt="linkedinIcon"></Image>
+            <Image src={linkedinIcon} alt="linkedinIcon" />
           </Link>
           <Link href={"#"}>
-            <Image src={mailIcon} alt="mailIcon"></Image>
+            <Image src={mailIcon} alt="mailIcon" />
           </Link>
         </div>
       </div>
