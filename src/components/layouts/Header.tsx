@@ -14,7 +14,7 @@ const Header = (): React.JSX.Element => {
 
   return (
     <Wrapper>
-      <div className="w-full md:w-[60%] bg-secondary-black overflow-hidden text-secondary-white mx-auto rounded-full h-14 flex items-center justify-center gap-4">
+      <div className="w-full md:w-[90%] bg-secondary-black overflow-hidden text-secondary-white mx-auto rounded-full h-14 flex items-center justify-center gap-4">
         <div className="pages">
           <ul className="flex sm:gap-6 gap-2">
             <li
@@ -59,7 +59,22 @@ const Header = (): React.JSX.Element => {
               onClick={() => setColor("experiance")}
             >
               {" "}
-              <Link href={"/experiance"}>projects</Link>{" "}
+              <Link href={"/projects/html-css-js-projects"}>
+                html-css-js-projects
+              </Link>{" "}
+            </li>
+            <li
+              className={`  sm:text-xl font-medium hover:underline ${
+                color === "experiance"
+                  ? "transition all ease 0.5s duration-700 text-secondary-white "
+                  : "text-purple"
+              }`}
+              onClick={() => setColor("experiance")}
+            >
+              {" "}
+              <Link href={"/projects/nextjs-projects"}>
+                nextjs-projects
+              </Link>{" "}
             </li>
           </ul>
         </div>

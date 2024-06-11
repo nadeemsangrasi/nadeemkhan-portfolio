@@ -1,30 +1,40 @@
+import { ExperianceCardType } from "@/types/type";
+import Link from "next/link";
 import React from "react";
+import dayjs from "dayjs";
 
-const ExperianceCard = (): React.JSX.Element => {
+const ExperianceCard = ({
+  domain,
+  startDate,
+  endDate,
+  place,
+  companyName,
+  detailPara1,
+  detailPara2,
+}: ExperianceCardType): React.JSX.Element => {
   return (
     <div className="md:flex w-full sm:w-[90%] mx-auto gap-4 my-16 border bg-expCard p-6 sm:p-14 rounded-xl">
       <div className="w-full sm:w-fit md:w-1/3">
-        <h1 className="text-primary-white text-lg sm:text-2xl">
-          Front-end Software Engineer
-        </h1>
-        <h2 className="text-purple text-[1rem] sm:text-xl">Contact</h2>
+        <h1 className="text-primary-white text-lg sm:text-2xl">{domain}</h1>
+        <h2 className="text-purple text-[1rem] sm:text-xl">
+          {" "}
+          <Link href={"#"}></Link>{" "}
+        </h2>
         <p className="text-secondary-gray font-light text-[1rem] md:text-lg">
-          jan 2020 . Present <br /> Karachi,Sindh
+          {dayjs(startDate).format("MMM D, YYYY")} .{" "}
+          {dayjs(endDate).format("MMM D, YYYY") == "Invalid Date"
+            ? "Present"
+            : dayjs(endDate).format("MMM D, YYYY")}{" "}
+          <br /> {place}
         </p>
       </div>
       <div className="w-full sm:w-[67%]">
-        <h2 className="text-purple text-xl pb-4 pt-5 sm:pt-0">Company Name</h2>
+        <h2 className="text-purple text-xl pb-4 pt-5 sm:pt-0">{companyName}</h2>
         <p className="text-secondary-gray font-light  text-[1rem] sm:text-lg pb-4">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
-          quod reprehenderit odit officiis vel in modi labore debitis blanditiis
-          quisquam illo eveniet, itaque necessitatibus? Sed labore eum
-          architecto? Ipsam, neque?
+          {detailPara1}
         </p>
         <p className="text-secondary-gray font-light  text-[1rem] sm:text-lg pb-4">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
-          quod reprehenderit odit officiis vel in modi labore debitis blanditiis
-          quisquam illo eveniet, itaque necessitatibus? Sed labore eum
-          architecto? Ipsam, neque?
+          {detailPara2}
         </p>
       </div>
     </div>

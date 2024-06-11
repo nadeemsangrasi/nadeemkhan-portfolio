@@ -5,6 +5,8 @@ import Link from "next/link";
 import Wrapper from "@/components/shared/Wrapper";
 import Button from "@/components/shared/Button";
 import ExperianceCard from "./ExperianceCard";
+import { experienceCardsData } from "@/data/data";
+import { ExperianceCardType } from "@/types/type";
 const ExperiancePage = (): React.JSX.Element => {
   return (
     <Wrapper>
@@ -26,9 +28,27 @@ const ExperiancePage = (): React.JSX.Element => {
         <Button title="Download CV" />
       </div>
       <div>
-        <ExperianceCard />
-        <ExperianceCard />
-        <ExperianceCard />
+        {experienceCardsData.map(
+          ({
+            domain,
+            startDate,
+            endDate,
+            place,
+            companyName,
+            detailPara1,
+            detailPara2,
+          }: ExperianceCardType) => (
+            <ExperianceCard
+              domain={domain}
+              startDate={startDate}
+              endDate={endDate}
+              place={place}
+              companyName={companyName}
+              detailPara1={detailPara1}
+              detailPara2={detailPara2}
+            />
+          )
+        )}
       </div>
     </Wrapper>
   );
