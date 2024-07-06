@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import Wrapper from "../shared/Wrapper";
 import { useEffect, useState } from "react";
@@ -7,23 +6,19 @@ import Image from "next/image";
 import githubIcon from "@/assets/icons/github.svg";
 import linkedinIcon from "@/assets/icons/linkedin.svg";
 import mailIcon from "@/assets/icons/mail.svg";
-import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuLabel,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
 const Header = (): React.JSX.Element => {
-  const [position, setPosition] = useState<string>("");
   const path: string = usePathname();
   const [pathName, setpathName] = useState<null | string>(null);
-  console.log(pathName);
+
   useEffect(() => {
     setpathName(path);
   }, [path]);
@@ -81,8 +76,15 @@ const Header = (): React.JSX.Element => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56 bg-primary-black text-primary-white z-[99]">
                   <DropdownMenuRadioGroup
-                    value={position}
-                    onValueChange={setPosition}
+                    value={
+                      pathName === "/projects/htmlcssjsProjects"
+                        ? "top"
+                        : pathName === "/projects/nextjsProjects"
+                        ? "bottom"
+                        : pathName === "/projects/othersProjects"
+                        ? "right"
+                        : ""
+                    }
                   >
                     <Link href={"/projects/htmlcssjsProjects"}>
                       <DropdownMenuRadioItem
@@ -124,7 +126,7 @@ const Header = (): React.JSX.Element => {
           >
             <Image src={linkedinIcon} alt="linkedinIcon" />
           </Link>
-          <Link href={"#"}>
+          <Link href={"mailto:nadeemsangrasi903@gmail.com"} target="blank">
             <Image src={mailIcon} alt="mailIcon" />
           </Link>
         </div>
