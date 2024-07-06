@@ -25,7 +25,7 @@ const Header = (): React.JSX.Element => {
 
   return (
     <Wrapper>
-      <div className="fixed -translate-x-1/2 left-1/2 z-[99] w-full md:w-[60%]  bg-secondary-black overflow-hidden text-secondary-white  rounded-full h-full p-4 sm:p-0 sm:h-14 flex items-center justify-center gap-4">
+      <div className="fixed -translate-x-1/2 left-1/2 z-[99] w-full  md:w-[60%]  bg-secondary-black overflow-hidden text-secondary-white  rounded-full sm:h-14 p-4 sm:p-0  flex items-center justify-center gap-4">
         <div className="pages">
           <ul className="flex flex-wrap sm:gap-6 gap-2">
             <li
