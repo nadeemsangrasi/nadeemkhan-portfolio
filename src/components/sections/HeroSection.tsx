@@ -15,16 +15,16 @@ const HeroSection = (): React.JSX.Element => {
 
   return (
     <Wrapper>
-      <div className="md:my-16 md:mx-8 flex flex-col-reverse  md:flex-row items-center justify-between w-full">
+      <div className="md:my-14 md:mx-8 flex flex-col-reverse  md:flex-row items-center justify-between w-full">
         <div className=" w-full md:w-1/2 py-6 md:py-0 mx-auto text-center md:text-left">
-          <h1 className="text-5xl md:text-6xl text-primary-white py-6 pt-8 pb-2">
+          <h1 className="text-5xl md:text-7xl text-primary-white py-6 pt-8 pb-2">
             Hi, I'm Nadeem
           </h1>
-          <h2 className="text-xl md:text-2xl text-primary-white py-2">
-            Latest Frontend
+          <h2 className="text-xl md:text-3xl text-primary-white py-2 ">
+            Front-end web developer with <br /> latest stack
             <FlipWords words={words} />
           </h2>
-          <p className="text-secondary-gray font-medium text-xl md:text-[1.3rem] leading-9 md:leading-[1.8rem] ">
+          <p className="text-secondary-gray font-medium text-xl md:text-[1.6rem] leading-9 md:leading-[1.8rem]  md:w-[90%]">
             Transforming ideas into engaging web experiences with
             <span className="text-primary-white"> Next.js</span> and
             <span className="text-primary-white"> React.js</span>

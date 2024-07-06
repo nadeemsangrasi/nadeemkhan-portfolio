@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Wrapper from "../shared/Wrapper";
 import { heroCardData } from "@/data/data";
 import { HeroCarType } from "@/types/type";
@@ -22,6 +22,26 @@ const HeroCards = (): React.JSX.Element => {
       behavior: "smooth",
     });
   };
+  useEffect(() => {
+    const container = cardChangeContainer.current;
+
+    const handleWheel = (event: WheelEvent) => {
+      event.preventDefault();
+      if (container) {
+        container.scrollLeft += event.deltaY;
+      }
+    };
+
+    if (container) {
+      container.addEventListener("wheel", handleWheel);
+    }
+
+    return () => {
+      if (container) {
+        container.removeEventListener("wheel", handleWheel);
+      }
+    };
+  }, []);
   return (
     <Wrapper>
       <div className="flex flex-col md:flex-row gap-4">
@@ -66,28 +86,6 @@ const HeroCards = (): React.JSX.Element => {
                 navigation("right");
               }}
             ></div>
-            {/* <div
-              className={`h-[20px] ${
-                card == "card3"
-                  ? "w-[100px] bg-primary-white "
-                  : "w-[30px] bg-secondary-gray"
-              } rounded-full transition-all ease 0.5s duration-500`}
-              onClick={() => {
-                setCard("card3");
-                navigation("right");
-              }}
-            ></div>
-            <div
-              className={` h-[20px] ${
-                card == "card4"
-                  ? "w-[100px] bg-primary-white "
-                  : "w-[30px] bg-secondary-gray"
-              } rounded-full transition-all ease 0.5s duration-500`}
-              onClick={() => {
-                setCard("card4");
-                navigation("right");
-              }}
-            ></div> */}
           </div>
         </div>
       </div>

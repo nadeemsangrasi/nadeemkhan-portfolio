@@ -9,16 +9,13 @@ export function HtmlCssJsProjectCard({ title, snug, img, url }: any) {
   return (
     <CardContainer className="inter-var">
       <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] bg-black  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-        <CardItem
-          translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
-        >
+        <CardItem translateZ="50" className="text-xl font-bold  text-white">
           {title}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className=" text-sm max-w-sm mt-2 text-white"
         >
           {snug}
         </CardItem>
@@ -42,13 +39,6 @@ export function HtmlCssJsProjectCard({ title, snug, img, url }: any) {
             className="px-4 py-2 rounded-xl text-xs font-normal text-white"
           >
             Try now →
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-          >
-            Sign up
           </CardItem>
         </div>
       </CardBody>
