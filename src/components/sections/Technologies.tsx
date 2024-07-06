@@ -10,9 +10,11 @@ const Technologies = (): React.JSX.Element => {
           These are the <br /> technologies I've been using{" "}
         </h1>
         <div className="py-8 text-primary-white text-center flex flex-wrap gap-8 justify-between">
-          {technologyCardData.map(({ title, data }: TechnologyCardType) => (
-            <TechnologyCard title={title} data={data} />
-          ))}
+          {technologyCardData.map(
+            ({ title, data }: TechnologyCardType, index: number) => (
+              <TechnologyCard key={index} title={title} data={data} />
+            )
+          )}
         </div>
       </div>
     </Wrapper>

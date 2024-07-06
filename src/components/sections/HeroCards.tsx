@@ -39,7 +39,7 @@ const HeroCards = (): React.JSX.Element => {
           >
             <div className=" flex gap-6 w-[1250px] mb-4 ">
               {heroCardData.map(({ logo, title, color }: HeroCarType) => (
-                <HeroCard logo={logo} title={title} color={color} />
+                <HeroCard key={title} logo={logo} title={title} color={color} />
               ))}
             </div>
           </div>

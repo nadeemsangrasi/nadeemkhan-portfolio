@@ -5,7 +5,7 @@ import React from "react";
 const HeroCard = ({ logo, title, color }: HeroCarType): React.JSX.Element => {
   return (
     <div
-      className={`text-center sm:text-left w-[15%] h-[15%] sm:w-[300px] sm:h-[250px] bg-${color} p-4 rounded-[60px]`}
+      className={`text-center sm:text-left w-[15%] h-[15%] sm:w-[300px] sm:h-[250px] ${color} p-4 rounded-[60px]`}
     >
       <Image
         src={logo}

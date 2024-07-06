@@ -1,3 +1,4 @@
+"use client";
 import Heading from "@/components/sections/Heading";
 import HeroCards from "@/components/sections/HeroCards";
 import HeroSection from "@/components/sections/HeroSection";

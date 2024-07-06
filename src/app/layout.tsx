@@ -3,6 +3,7 @@ import { Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
+import ParticlesBgWrapper from "@/components/ui/ParticlesBgWrapper";
 
 const raleway = Raleway({ style: "normal", subsets: ["latin"] });
 
@@ -19,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.className}>
-        <div className="bg-primary-black">
-          <Header />
-          {children}
-          <Footer />
-        </div>
+        <ParticlesBgWrapper>
+          <div className="bg-black">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </ParticlesBgWrapper>
       </body>
     </html>
   );

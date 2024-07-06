@@ -14,10 +14,10 @@ import sassLogo from "@/assets/logos/sass.svg"
 import contentfullLogo from "@/assets/logos/contentful.svg"
 import sanityLogo from "@/assets/logos/sanity.svg"
 export const heroCardData: HeroCarType[] = [
-    { logo: nextLogo, title: "Next.Js", color: "card-1" },
-    { logo: typescriptLogo, title: "TypeScript", color: "card-2" },
-    { logo: reactLogo, title: "React.Js", color: "card-3" },
-    { logo: javascriptLogo, title: "JavaScript", color: "card-3" },
+    { logo: nextLogo, title: "Next.Js", color: "bg-card-1" },
+    { logo: typescriptLogo, title: "TypeScript", color: "bg-card-2" },
+    { logo: reactLogo, title: "React.Js", color: "bg-card-3" },
+    { logo: javascriptLogo, title: "JavaScript", color: "bg-card-4" },
 ]
 
 
@@ -64,7 +64,7 @@ export const experienceCardsData: ExperianceCardType[] = [
         startDate: "January 2023",
         endDate: "Present",
         place: "Karachi, Pakistan",
-        companyName: "Governor Sindh Initiative for Certified Cloud Applied Generative AI Engineers",
+        companyName: "Senior Student at Governor Sindh Initiative for Certified Cloud Applied Generative AI Engineers",
         detailPara1: "As a Senior Student, I play a crucial role in supporting both students and faculty within the Governor Sindh Initiative for Certified Cloud Applied Generative AI Engineers. My responsibilities include solving queries from fellow students, providing guidance and solutions to problems related to cloud computing and generative AI, and helping new students navigate the program.",
         detailPara2: "In addition, I assist teachers and mentors in organizing and delivering coursework, ensuring smooth and efficient operations. I actively participate in and contribute to advanced projects, applying my skills to real-world challenges and fostering an environment of collaborative learning. My dedication and hard work have been key factors in my selection for this role, reflecting my commitment to excellence and my passion for advancing in the field of cloud computing and AI."
     },
@@ -102,4 +102,85 @@ export const eductaionCardsData = [
 ]
 
 
+import passManageImg from "@/assets/nextProjectsImages/passmanage.png"
+import carShocaseImg from "@/assets/nextProjectsImages/carShocase.png"
+import penaverseCloneImg from "@/assets/nextProjectsImages/penaverseCloneImg.png"
+import photoAlbumImg from "@/assets/nextProjectsImages/photoAlbumGalleryImg.png"
+import quizAppImg from "@/assets/nextProjectsImages/quizAppImg.png"
+import ecomerceImg from "@/assets/nextProjectsImages/ecomerceImg.png"
+export const nextProjectData = [
+    {
+        title: "Car Showcase App",
+        snug: "Interactive 3D car models with detailed specs, built with Next.js, Redux, and Sass.",
+        img: carShocaseImg,
+        url: "https://car-showcase-app-lac.vercel.app/"
+    },
+    {
+        title: "Penaverse Dao Clone",
+        snug: "Decentralized autonomous organization platform built with Next.js and Tailwind CSS.",
+        img: penaverseCloneImg,
+        url: "https://penaverse-dao-clone.vercel.app/"
+    },
+    {
+        title: "Photo Album Gallery",
+        snug: "Showcase stunning photo albums with Cloudinary, Next.js, and Tailwind CSS.",
+        img: photoAlbumImg,
+        url: "https://nadeem-photos-gallery.vercel.app/"
+    },
+    {
+        title: "Ultimate Quiz App",
+        snug: "Engaging quizzes with a sleek interface, built with Next.js and Tailwind CSS.",
+        img: quizAppImg,
+        url: "https://nadeem-quiz-app.vercel.app/"
+    },
+    {
+        title: "Ecommerce App",
+        snug: "Seamless shopping experience with Next.js, Redux, and Tailwind CSS for fast, stylish performance.",
+        img: ecomerceImg,
+        url: "https://cart-system-alpha.vercel.app/"
+    },
+    {
+        title: "Password Manager App",
+        snug: "Securely manage passwords with ease, crafted using Next.js and styled with Tailwind CSS.",
+        img: passManageImg,
+        url: "https://password-manager-one-kappa.vercel.app/"
+    },
+]
 
+import spotifyImg from "@/assets/HtmlCSSProjectsImages/spotify.png"
+import portfolioImg from "@/assets/HtmlCSSProjectsImages/portfolio.png"
+import animatedImg from "@/assets/HtmlCSSProjectsImages/animatedSite.png"
+import twoGoodImg from "@/assets/HtmlCSSProjectsImages/twoGoodClone.png"
+import landingPageImg from "@/assets/HtmlCSSProjectsImages/twoGoodClone.png"
+export const htmlCssProjectData = [
+    {
+        title: "Spotify Clone",
+        snug: "Stream and discover your favorite music with ease on our Spotify clone",
+        img: spotifyImg,
+        url: "https://nadeemsangrasi.github.io/spotify_clone/"
+    },
+    {
+        title: "Portfolio Site",
+        snug: "Showcasing my work, skills, and passion for creative excellence.",
+        img: portfolioImg,
+        url: "https://nadeemsangrasi.github.io/Portfolio-Site/"
+    },
+    {
+        title: "Animated Portfolio",
+        snug: "Showcase your creativity and skills with our dynamic animated portfolio site.",
+        img: animatedImg,
+        url: "https://nadeemsangrasi.github.io/Animated-Portfolio-Site/"
+    },
+    {
+        title: "Two Good Clone",
+        snug: "Experience the ultimate deal-hunting with our Too Good to Go clone",
+        img: twoGoodImg,
+        url: "https://nadeemsangrasi.github.io/Two-Good-Site-clone/"
+    },
+    {
+        title: "Animated Landing Page",
+        snug: "Experience music like never before with our dynamic and engaging animated landing page",
+        img: landingPageImg,
+        url: "https://nadeemsangrasi.github.io/Animated-Landing-Page/"
+    },
+]

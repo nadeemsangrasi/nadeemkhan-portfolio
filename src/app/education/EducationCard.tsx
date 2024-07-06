@@ -1,7 +1,9 @@
+"use client";
 import { EductaionCardType } from "@/types/type";
 import dayjs from "dayjs";
 import React from "react";
-
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
 const EducationCard = ({
   institution,
   degree,
@@ -12,7 +14,7 @@ const EducationCard = ({
   description,
 }: EductaionCardType): React.JSX.Element => {
   return (
-    <div className="w-full mx-auto my-8 sm:w-[50%] border-l border-r border-t border-b border-secondary-gray p-8 rounded-3xl">
+    <div className="w-full mx-auto my-8 sm:w-[70%] border-l border-r border-t border-b  p-8 rounded-3xl    sm:p-6  dark:bg-zinc-900     border-secondary-gray  hover:hue-rotate-90  duration-[800ms]  hover:duration-[1500ms]">
       <h2 className="text-purple text-xl pb-4 pt-5 sm:pt-0">
         Institution <span className="text-primary-white">: {institution}</span>
       </h2>
