@@ -54,10 +54,10 @@ const HeroCards = (): React.JSX.Element => {
         </div>
         <div className="mx-2 md:mx-0">
           <div
-            className="w-[900px] overflow-x-hidden"
+            className="w-[900px] overflow-x-scroll scrollbar-hide"
             ref={cardChangeContainer}
           >
-            <div className=" flex gap-6 w-[1250px] mb-4 ">
+            <div className=" flex gap-6 w-[1600px] sm:w-[1520px]   lg:w-[1250px] mb-4 ">
               {heroCardData.map(({ logo, title, color }: HeroCarType) => (
                 <HeroCard key={title} logo={logo} title={title} color={color} />
               ))}
