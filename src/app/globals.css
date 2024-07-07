@@ -4,6 +4,13 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 1rem;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
