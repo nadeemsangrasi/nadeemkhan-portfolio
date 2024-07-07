@@ -65,8 +65,7 @@ const Header = (): React.JSX.Element => {
                     className={`bg-transparent hover:bg-transparent p-0  -mt-2 sm:-mt-1 sm:text-xl font-medium hover:underline outline-none cursor-pointer ${
                       pathName === "/projects" ||
                       pathName === "/projects/htmlcssjsProjects" ||
-                      pathName === "/projects/nextjsProjects" ||
-                      pathName === "/projects/othersProjects"
+                      pathName === "/projects/nextjsProjects"
                         ? "transition all ease 0.5s duration-700 text-secondary-white"
                         : "text-purple"
                     }`}
@@ -81,8 +80,6 @@ const Header = (): React.JSX.Element => {
                         ? "top"
                         : pathName === "/projects/nextjsProjects"
                         ? "bottom"
-                        : pathName === "/projects/othersProjects"
-                        ? "right"
                         : ""
                     }
                   >
@@ -100,14 +97,6 @@ const Header = (): React.JSX.Element => {
                         className="hover:text-primary-black font-semibold cursor-pointer"
                       >
                         Nextjs Projects
-                      </DropdownMenuRadioItem>
-                    </Link>
-                    <Link href={"/projects/othersProjects"}>
-                      <DropdownMenuRadioItem
-                        value="right"
-                        className="hover:text-primary-black font-semibold cursor-pointer"
-                      >
-                        Other Projects
                       </DropdownMenuRadioItem>
                     </Link>
                   </DropdownMenuRadioGroup>

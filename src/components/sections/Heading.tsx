@@ -12,6 +12,7 @@ const Heading = (): React.JSX.Element => {
             x: { type: "spring", stiffness: 60 },
             opacity: { duration: 1 },
             ease: "easeIn",
+            duration: 1,
           }}
           className="text-heading-1 break-words text-5xl sm:text-7xl font-bold pb-10"
         >
@@ -25,6 +26,7 @@ const Heading = (): React.JSX.Element => {
             x: { type: "spring", stiffness: 60 },
             opacity: { duration: 1 },
             ease: "easeIn",
+            duration: 1,
           }}
           className="text-heading-2 break-words text-5xl sm:text-7xl font-bold pb-10"
         >
@@ -38,6 +40,7 @@ const Heading = (): React.JSX.Element => {
             x: { type: "spring", stiffness: 60 },
             opacity: { duration: 1 },
             ease: "easeIn",
+            duration: 1,
           }}
           className="text-heading-3 break-words text-5xl sm:text-7xl font-bold pb-10"
         >

@@ -1,4 +1,5 @@
 "use client";
+import ContactSection from "@/components/sections/ContactSection";
 import Heading from "@/components/sections/Heading";
 import HeroCards from "@/components/sections/HeroCards";
 import HeroSection from "@/components/sections/HeroSection";
@@ -9,10 +10,11 @@ export default function Home(): React.JSX.Element {
   return (
     <div>
       <HeroSection />
-      <InfiniteScroller text="Building Secure, Beautiful, Dynamic Sites  | Next.js Expert | Crafting User-Centric Experiences | Responsive Frontend Developer | React.js Pro" />
+      <InfiniteScroller text=" | Building Secure, Beautiful, Dynamic Sites  | Next.js Expert | Crafting User-Centric Experiences | Responsive Frontend Developer | React.js Pro " />
       <HeroCards />
       <Heading />
       <Technologies />
+      <ContactSection />
     </div>
   );
 }

@@ -12,6 +12,7 @@ const HeroCard = ({ logo, title, color }: HeroCarType): React.JSX.Element => {
         y: { type: "spring", stiffness: 60 },
         opacity: { duration: 1 },
         ease: "easeIn",
+        duration: 1,
       }}
       className={`text-center sm:text-left w-[15%] h-[15%] sm:w-[300px] sm:h-[250px] ${color} p-4 rounded-[60px]`}
     >
@@ -23,6 +24,7 @@ const HeroCard = ({ logo, title, color }: HeroCarType): React.JSX.Element => {
           y: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
+          duration: 1,
         }}
       >
         <Image
@@ -39,6 +41,7 @@ const HeroCard = ({ logo, title, color }: HeroCarType): React.JSX.Element => {
           y: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
+          duration: 1,
         }}
         className="font-bold text-3xl px-8 py-4"
       >

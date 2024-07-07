@@ -7,7 +7,11 @@ import ParticlesBackground from "@/components/ui/ParticlesBackground";
 const ParticlesBgWrapper: FC<{ children: React.ReactNode }> = ({
   children,
 }): JSX.Element => {
-  return <ParticlesBackground>{children}</ParticlesBackground>;
+  return (
+    <ParticlesBackground>
+      <div className="overflow-hidden">{children}</div>
+    </ParticlesBackground>
+  );
 };
 
 export default ParticlesBgWrapper;

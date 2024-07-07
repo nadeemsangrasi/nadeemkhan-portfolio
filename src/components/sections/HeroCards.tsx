@@ -53,6 +53,7 @@ const HeroCards = (): React.JSX.Element => {
             y: { type: "spring", stiffness: 60 },
             opacity: { duration: 1 },
             ease: "easeIn",
+            duration: 1,
           }}
           className="mx-auto text-center sm:text-left my-4 md:my-0 w-full h-full  sm:w-[400px] md:h-[250px] p-4 rounded-3xl"
         >
@@ -62,12 +63,12 @@ const HeroCards = (): React.JSX.Element => {
             with the most popular ecosystem in frontend
           </h4>
         </motion.div>
-        <div className="mx-2 md:mx-0">
+        <div className=" mx-2 md:mx-0">
           <div
-            className="w-[900px] overflow-x-scroll scrollbar-hide"
+            className=" w-[900px] overflow-x-scroll overflow-y-hidden scrollbar-hide"
             ref={cardChangeContainer}
           >
-            <div className=" flex gap-6 w-[1600px] sm:w-[1520px]   lg:w-[1250px] mb-4 ">
+            <div className="h-fit flex gap-6 w-[1680px] sm:w-[1520px]   lg:w-[1250px] mb-4 ">
               {heroCardData.map(({ logo, title, color }: HeroCarType) => (
                 <HeroCard key={title} logo={logo} title={title} color={color} />
               ))}

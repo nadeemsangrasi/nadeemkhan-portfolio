@@ -20,13 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.className}>
-        {/* <ParticlesBgWrapper> */}
-        <div className="bg-black">
+        <ParticlesBgWrapper>
           <Header />
           {children}
           <Footer />
-        </div>
-        {/* </ParticlesBgWrapper> */}
+        </ParticlesBgWrapper>
       </body>
     </html>
   );

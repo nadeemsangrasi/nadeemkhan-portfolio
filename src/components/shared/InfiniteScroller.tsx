@@ -50,6 +50,7 @@ const InfiniteScroller = ({ text }: { text: string }) => {
         y: { type: "spring", stiffness: 60 },
         opacity: { duration: 1 },
         ease: "easeIn",
+        duration: 1,
       }}
       className="overflow-hidden whitespace-nowrap mb-16"
     >
@@ -57,7 +58,7 @@ const InfiniteScroller = ({ text }: { text: string }) => {
         {[...Array(2)].map((_, i) => (
           <span
             key={i}
-            className="uppercase text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
+            className="uppercase text-6xl sm:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
           >
             {text}
           </span>

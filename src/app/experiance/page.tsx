@@ -6,6 +6,13 @@ import { experienceCardsData } from "@/data/data";
 import { ExperianceCardType } from "@/types/type";
 import { motion } from "framer-motion";
 const ExperiancePage = (): React.JSX.Element => {
+  const handleDownloadCV = () => {
+    const cvFilePath = "/resume/NadeemKhanResume.pdf";
+    const link = document.createElement("a");
+    link.href = cvFilePath;
+    link.download = "Nadeem_Sangrasi_CV.pdf";
+    link.click();
+  };
   return (
     <Wrapper>
       <motion.div
@@ -16,8 +23,9 @@ const ExperiancePage = (): React.JSX.Element => {
           x: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
+          duration: 1,
         }}
-        className="w-1/2 mx-auto  text-center my-16"
+        className="w-full sm:w-1/2 mx-auto  text-center my-16"
       >
         <p className="text-secondary-gray font-medium text-xl md:text-2xl leading-9  ">
           &lt; Here, you can know me a little more and see my whole experience
@@ -27,7 +35,7 @@ const ExperiancePage = (): React.JSX.Element => {
           </span>
           /&gt;
         </p>
-        <Button title="Download CV" />
+        <Button title="Download CV" handleDownloadCv={handleDownloadCV} />
       </motion.div>
       <div>
         {experienceCardsData.map(

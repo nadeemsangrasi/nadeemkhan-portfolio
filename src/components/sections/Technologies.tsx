@@ -15,6 +15,7 @@ const Technologies = (): React.JSX.Element => {
             y: { type: "spring", stiffness: 60 },
             opacity: { duration: 1 },
             ease: "easeIn",
+            duration: 1,
           }}
           className="pb-10 text-4xl text-center sm:text-left sm:text-5xl break-words  text-primary-white"
         >

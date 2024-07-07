@@ -1,10 +1,12 @@
-import Link from "next/link";
+"use client";
 import Wrapper from "../shared/Wrapper";
 import Image from "next/image";
 import myImage from "@/assets/images/myImage.png";
 import Button from "../shared/Button";
 import { FlipWords } from "../ui/flip-words";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 const HeroSection = (): React.JSX.Element => {
   const words = [
     "Next.js",
@@ -14,9 +16,17 @@ const HeroSection = (): React.JSX.Element => {
     "Tailwind CSS",
   ];
 
+  const handleDownloadCV = () => {
+    const cvFilePath = "/resume/NadeemKhanResume.pdf";
+    const link = document.createElement("a");
+    link.href = cvFilePath;
+    link.download = "Nadeem_Sangrasi_CV.pdf";
+    link.click();
+  };
+
   return (
     <Wrapper>
-      <div className="md:my-14 md:mx-8 flex flex-col-reverse  md:flex-row items-center justify-between w-full">
+      <div className="md:my-14 md:mx-8 flex flex-col-reverse md:flex-row items-center justify-between w-full">
         <div className="w-full md:w-1/2 py-6 md:py-0 mx-auto text-center md:text-left">
           <motion.h1
             initial={{ x: -40, opacity: 0 }}
@@ -26,6 +36,7 @@ const HeroSection = (): React.JSX.Element => {
               x: { type: "spring", stiffness: 60 },
               opacity: { duration: 1 },
               ease: "easeIn",
+              duration: 1,
             }}
             className="text-5xl md:text-7xl text-primary-white py-6 pt-8 pb-2"
           >
@@ -39,11 +50,14 @@ const HeroSection = (): React.JSX.Element => {
               x: { type: "spring", stiffness: 60 },
               opacity: { duration: 0.6 },
               ease: "easeIn",
+              duration: 1,
             }}
-            className="text-xl md:text-3xl text-primary-white py-2"
+            className="text-xl md:text-3xl text-primary-white py-2 font-medium "
           >
             Front-end web developer with <br /> latest stack
-            <FlipWords words={words} />
+            <span className="overflow-hidden sm:inline block">
+              <FlipWords words={words} />
+            </span>
           </motion.h2>
           <motion.p
             initial={{ x: -70, opacity: 0 }}
@@ -53,6 +67,7 @@ const HeroSection = (): React.JSX.Element => {
               x: { type: "spring", stiffness: 60 },
               opacity: { duration: 0.8 },
               ease: "easeIn",
+              duration: 1,
             }}
             className="text-secondary-gray font-medium text-xl md:text-[1.6rem] leading-9 md:leading-[1.8rem] md:w-[90%]"
           >
@@ -71,9 +86,10 @@ const HeroSection = (): React.JSX.Element => {
               x: { type: "spring", stiffness: 60 },
               opacity: { duration: 0.8 },
               ease: "easeIn",
+              duration: 1,
             }}
           >
-            <Button title="Download CV" />
+            <Button title="Download CV" handleDownloadCv={handleDownloadCV} />
             <span className="text-purple px-2 md:px-6 font-medium text-lg md:inline-block block">
               <Link href={"/experience"}>see experiences</Link>
             </span>
@@ -90,8 +106,8 @@ const HeroSection = (): React.JSX.Element => {
             duration: 1,
           }}
           className="w-full md:w-1/2 lg:w-[38%]"
-        >
-          <Image src={myImage} alt="img" className="w-full h-full" />
+        > 
+          <Image priority src={myImage} alt="img" className="w-full h-full" />
         </motion.div>
       </div>
     </Wrapper>

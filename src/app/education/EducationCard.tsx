@@ -21,6 +21,7 @@ const EducationCard = ({
         x: { type: "spring", stiffness: 60 },
         opacity: { duration: 1 },
         ease: "easeIn",
+        duration: 1,
       }}
       className="w-full mx-auto my-8 sm:w-[70%] border-l border-r border-t border-b  p-8 rounded-3xl    sm:p-6  dark:bg-zinc-900     border-secondary-gray  hover:hue-rotate-90  duration-[800ms]  hover:duration-[1500ms]"
     >
@@ -32,6 +33,7 @@ const EducationCard = ({
           y: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
+          duration: 1,
         }}
         className="text-purple text-xl pb-4 pt-5 sm:pt-0"
       >
@@ -45,6 +47,7 @@ const EducationCard = ({
           y: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
+          duration: 1,
         }}
         className="text-purple text-xl pb-4 pt-5 sm:pt-0"
       >
@@ -59,6 +62,7 @@ const EducationCard = ({
           y: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
+          duration: 1,
         }}
         className="text-purple text-xl pb-4 pt-5 sm:pt-0"
       >
@@ -75,6 +79,7 @@ const EducationCard = ({
           y: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
+          duration: 1,
         }}
         className="text-purple text-xl pb-4 pt-5 sm:pt-0"
       >
@@ -95,6 +100,7 @@ const EducationCard = ({
           y: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
+          duration: 1,
         }}
         className="text-purple text-xl pb-4 pt-5 sm:pt-0"
       >
@@ -108,8 +114,9 @@ const EducationCard = ({
           y: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
+          duration: 1,
         }}
-        className="text-secondary-gray font-light  text-[1rem] sm:text-lg pb-4"
+        className="text-secondary-white font-light  text-[1rem] sm:text-xl pb-4"
       >
         {description}
       </motion.p>

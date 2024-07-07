@@ -22,6 +22,7 @@ const ExperianceCard = ({
         y: { type: "spring", stiffness: 60 },
         opacity: { duration: 1 },
         ease: "easeIn",
+        duration: 1,
       }}
       className="md:flex w-full sm:w-[90%] mx-auto gap-4 my-16 border bg-expCard p-6 sm:p-14 rounded-xl"
     >
@@ -33,6 +34,7 @@ const ExperianceCard = ({
           x: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
+          duration: 1,
         }}
         className="w-full sm:w-fit md:w-1/3"
       >
@@ -41,7 +43,7 @@ const ExperianceCard = ({
           {" "}
           <Link href={"#"}></Link>{" "}
         </h2>
-        <p className="text-secondary-gray font-light text-[1rem] md:text-lg">
+        <p className="text-secondary-white font-light  text-[1rem] sm:text-xl md:text-lg">
           {dayjs(startDate).format("MMM D, YYYY")} .{" "}
           {dayjs(endDate).format("MMM D, YYYY") == "Invalid Date"
             ? "Present"
@@ -57,14 +59,17 @@ const ExperianceCard = ({
           x: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
+          duration: 1,
         }}
         className="w-full sm:w-[67%]"
       >
-        <h2 className="text-purple text-xl pb-4 pt-5 sm:pt-0">{companyName}</h2>
-        <p className="text-secondary-gray font-light  text-[1rem] sm:text-lg pb-4">
+        <h2 className="text-purple text-xl sm:text-2xl pb-4 pt-5 sm:pt-0">
+          {companyName}
+        </h2>
+        <p className="text-secondary-white font-light  text-[1rem] sm:text-xl  pb-4">
           {detailPara1}
         </p>
-        <p className="text-secondary-gray font-light  text-[1rem] sm:text-lg pb-4">
+        <p className="text-secondary-white font-light  text-[1rem] sm:text-xl  pb-4">
           {detailPara2}
         </p>
       </motion.div>
