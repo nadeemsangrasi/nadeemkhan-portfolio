@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
 import Wrapper from "../shared/Wrapper";
 import Link from "next/link";
 import githubIcon from "@/assets/icons/github.svg";
 import linkedinIcon from "@/assets/icons/linkedin.svg";
 import mailIcon from "@/assets/icons/mail.svg";
+
 const Footer = (): React.JSX.Element => {
   return (
     <Wrapper>

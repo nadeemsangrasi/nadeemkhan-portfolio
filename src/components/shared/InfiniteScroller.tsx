@@ -42,7 +42,17 @@ const InfiniteScroller = ({ text }: { text: string }) => {
   }, []);
 
   return (
-    <div className="overflow-hidden whitespace-nowrap mb-16">
+    <motion.div
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 0.2,
+        y: { type: "spring", stiffness: 60 },
+        opacity: { duration: 1 },
+        ease: "easeIn",
+      }}
+      className="overflow-hidden whitespace-nowrap mb-16"
+    >
       <motion.div ref={containerRef} className="flex space-x-4 ">
         {[...Array(2)].map((_, i) => (
           <span
@@ -53,7 +63,7 @@ const InfiniteScroller = ({ text }: { text: string }) => {
           </span>
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

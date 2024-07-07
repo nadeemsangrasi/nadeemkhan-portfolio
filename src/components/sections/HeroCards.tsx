@@ -4,7 +4,7 @@ import Wrapper from "../shared/Wrapper";
 import { heroCardData } from "@/data/data";
 import { HeroCarType } from "@/types/type";
 import HeroCard from "../shared/HeroCard";
-
+import { motion } from "framer-motion";
 const HeroCards = (): React.JSX.Element => {
   const [card, setCard] = useState<"card1" | "card2" | "card3" | "card4">(
     "card1"
@@ -45,13 +45,23 @@ const HeroCards = (): React.JSX.Element => {
   return (
     <Wrapper>
       <div className="flex flex-col md:flex-row gap-4">
-        <div className="mx-auto text-center sm:text-left my-4 md:my-0 w-full h-full  sm:w-[400px] md:h-[250px] p-4 rounded-3xl">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            y: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+          }}
+          className="mx-auto text-center sm:text-left my-4 md:my-0 w-full h-full  sm:w-[400px] md:h-[250px] p-4 rounded-3xl"
+        >
           <h4 className="text-secondary-gray text-xl py-2">1 year of</h4>
           <h1 className="text-7xl text-primary-white font-bold py-2">XP</h1>
           <h4 className="text-secondary-gray text-xl">
             with the most popular ecosystem in frontend
           </h4>
-        </div>
+        </motion.div>
         <div className="mx-2 md:mx-0">
           <div
             className="w-[900px] overflow-x-scroll scrollbar-hide"
