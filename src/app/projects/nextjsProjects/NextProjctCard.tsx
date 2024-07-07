@@ -3,7 +3,13 @@ import React from "react";
 import { PinContainer } from "@/components/ui/3d-pin";
 import Image from "next/image";
 import { motion } from "framer-motion";
-export function NextProjectCard({ title, snug, img, url }: any) {
+import { HtmlCssAndNextjsCardType } from "@/types/type";
+export function NextProjectCard({
+  title,
+  snug,
+  img,
+  url,
+}: HtmlCssAndNextjsCardType): JSX.Element {
   return (
     <motion.div
       initial={{ x: 140, opacity: 0 }}

@@ -4,7 +4,13 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 import { motion } from "framer-motion";
-export function HtmlCssJsProjectCard({ title, snug, img, url }: any) {
+import { HtmlCssAndNextjsCardType } from "@/types/type";
+export function HtmlCssJsProjectCard({
+  title,
+  snug,
+  img,
+  url,
+}: HtmlCssAndNextjsCardType): React.JSX.Element {
   return (
     <motion.div
       initial={{ y: 100, opacity: 0 }}

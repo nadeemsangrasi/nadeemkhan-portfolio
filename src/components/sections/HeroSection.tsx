@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const HeroSection = (): React.JSX.Element => {
-  const words = [
+  const words: string[] = [
     "Next.js",
     "React.js",
     "TypeScript",
@@ -16,7 +16,7 @@ const HeroSection = (): React.JSX.Element => {
     "Tailwind CSS",
   ];
 
-  const handleDownloadCV = () => {
+  const handleDownloadCV = (): void => {
     const cvFilePath = "/resume/NadeemKhanResume.pdf";
     const link = document.createElement("a");
     link.href = cvFilePath;
@@ -106,7 +106,7 @@ const HeroSection = (): React.JSX.Element => {
             duration: 1,
           }}
           className="w-full md:w-1/2 lg:w-[38%]"
-        > 
+        >
           <Image priority src={myImage} alt="img" className="w-full h-full" />
         </motion.div>
       </div>

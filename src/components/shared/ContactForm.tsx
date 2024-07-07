@@ -7,7 +7,7 @@ import { cn } from "@/utils/cn";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 
-function ContactUsForm() {
+function ContactUsForm(): JSX.Element {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 

@@ -1,4 +1,4 @@
-import { ExperianceCardType, HeroCarType, TechnologyCardType } from "@/types/type";
+import { EductaionCardType, ExperianceCardType, HeroCarType, HtmlCssAndNextjsCardType, TechnologyCardType, HeadingDataType } from "@/types/type";
 import nextLogo from "@/assets/logos/nextjs.svg";
 import vercelLogo from "@/assets/logos/vercel.svg"
 import githubLogo from "@/assets/logos/github.svg"
@@ -13,6 +13,18 @@ import tailwindcssLogo from "@/assets/logos/tailwindcss.svg"
 import sassLogo from "@/assets/logos/sass.svg"
 import contentfullLogo from "@/assets/logos/contentful.svg"
 import sanityLogo from "@/assets/logos/sanity.svg"
+import passManageImg from "@/assets/nextProjectsImages/passmanage.png"
+import carShocaseImg from "@/assets/nextProjectsImages/carShocase.png"
+import penaverseCloneImg from "@/assets/nextProjectsImages/penaverseCloneImg.png"
+import photoAlbumImg from "@/assets/nextProjectsImages/photoAlbumGalleryImg.png"
+import quizAppImg from "@/assets/nextProjectsImages/quizAppImg.png"
+import ecomerceImg from "@/assets/nextProjectsImages/ecomerceImg.png"
+import spotifyImg from "@/assets/HtmlCSSProjectsImages/spotify.png"
+import portfolioImg from "@/assets/HtmlCSSProjectsImages/portfolio.png"
+import animatedImg from "@/assets/HtmlCSSProjectsImages/animatedSite.png"
+import twoGoodImg from "@/assets/HtmlCSSProjectsImages/twoGoodClone.png"
+import landingPageImg from "@/assets/HtmlCSSProjectsImages/twoGoodClone.png"
+
 export const heroCardData: HeroCarType[] = [
     { logo: nextLogo, title: "Next.Js", color: "bg-card-1" },
     { logo: typescriptLogo, title: "TypeScript", color: "bg-card-2" },
@@ -79,7 +91,7 @@ export const experienceCardsData: ExperianceCardType[] = [
     }
 ]
 
-export const eductaionCardsData = [
+export const eductaionCardsData: EductaionCardType[] = [
     {
         institution: "Shah Abdul Latif Degree collage Mirpurkhas Sindh",
         degree: "collage",
@@ -102,13 +114,8 @@ export const eductaionCardsData = [
 ]
 
 
-import passManageImg from "@/assets/nextProjectsImages/passmanage.png"
-import carShocaseImg from "@/assets/nextProjectsImages/carShocase.png"
-import penaverseCloneImg from "@/assets/nextProjectsImages/penaverseCloneImg.png"
-import photoAlbumImg from "@/assets/nextProjectsImages/photoAlbumGalleryImg.png"
-import quizAppImg from "@/assets/nextProjectsImages/quizAppImg.png"
-import ecomerceImg from "@/assets/nextProjectsImages/ecomerceImg.png"
-export const nextProjectData = [
+
+export const nextProjectData: HtmlCssAndNextjsCardType[] = [
     {
         title: "Car Showcase App",
         snug: "Interactive 3D car models with detailed specs, built with Next.js, Redux, and Sass.",
@@ -147,12 +154,8 @@ export const nextProjectData = [
     },
 ]
 
-import spotifyImg from "@/assets/HtmlCSSProjectsImages/spotify.png"
-import portfolioImg from "@/assets/HtmlCSSProjectsImages/portfolio.png"
-import animatedImg from "@/assets/HtmlCSSProjectsImages/animatedSite.png"
-import twoGoodImg from "@/assets/HtmlCSSProjectsImages/twoGoodClone.png"
-import landingPageImg from "@/assets/HtmlCSSProjectsImages/twoGoodClone.png"
-export const htmlCssProjectData = [
+
+export const htmlCssProjectData: HtmlCssAndNextjsCardType[] = [
     {
         title: "Spotify Clone",
         snug: "Stream and discover your favorite music with ease on our Spotify clone",
@@ -184,3 +187,26 @@ export const htmlCssProjectData = [
         url: "https://nadeemsangrasi.github.io/Animated-Landing-Page/"
     },
 ]
+export const headingData: HeadingDataType[] = [
+    {
+        text: "TypeScript",
+        color: "text-heading-1",
+        dir: "x",
+        value: -100,
+        delay: 0.4,
+    },
+    {
+        text: "Next.js",
+        color: "text-heading-2",
+        dir: "x",
+        value: 100,
+        delay: 0.6,
+    },
+    {
+        text: "React.js",
+        color: "text-heading-3",
+        dir: "x",
+        value: -100,
+        delay: 0.8,
+    },
+];

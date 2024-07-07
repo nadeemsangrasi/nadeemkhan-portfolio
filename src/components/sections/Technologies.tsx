@@ -1,3 +1,4 @@
+"use client";
 import Wrapper from "../shared/Wrapper";
 import TechnologyCard from "../shared/TechnologyCard";
 import { technologyCardData } from "@/data/data";

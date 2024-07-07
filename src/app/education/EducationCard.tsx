@@ -58,6 +58,20 @@ const EducationCard = ({
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{
+          delay: 0.3,
+          y: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 1,
+        }}
+        className="text-purple text-xl pb-4 pt-5 sm:pt-0"
+      >
+        Degree <span className="text-primary-white">: {degree}</span>
+      </motion.h2>
+      <motion.h2
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
           delay: 0.4,
           y: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },

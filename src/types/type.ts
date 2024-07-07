@@ -33,3 +33,18 @@ export type EductaionCardType = {
     location: string;
     description: string;
 }
+
+export type HtmlCssAndNextjsCardType = {
+    title: string;
+    snug: string;
+    img: StaticImageData;
+    url: string;
+}
+
+export type HeadingDataType = {
+    text: string;
+    color: string;
+    dir: string;
+    value: number;
+    delay: number;
+}
