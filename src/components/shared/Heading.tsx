@@ -14,7 +14,7 @@ const Heading = ({ text, color, dir, value, delay }: HeadingDataType) => {
         ease: "easeIn",
         duration: 1,
       }}
-      className={`${color} break-words text-5xl sm:text-7xl font-bold pb-10`}
+      className={`${color} break-words text-5xl sm:text-7xl font-bold pb-10 text-center`}
     >
       {text}
     </motion.h1>
@@ -29,7 +29,7 @@ const Heading = ({ text, color, dir, value, delay }: HeadingDataType) => {
         ease: "easeIn",
         duration: 1,
       }}
-      className={`${color} break-words text-5xl sm:text-7xl font-bold pb-10`}
+      className={`${color} break-words text-5xl sm:text-7xl font-bold pb-10 text-center`}
     >
       {text}
     </motion.h1>

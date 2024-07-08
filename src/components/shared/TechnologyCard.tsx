@@ -20,7 +20,7 @@ const TechnologyCard = ({
       }}
       className="mx-auto md:mx-0"
     >
-      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-6 bg-black dark:bg-zinc-900 w-full sm:w-fit   border-secondary-gray  hover:hue-rotate-90  duration-[800ms]  hover:duration-[1500ms] ">
+      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-6 bg-black dark:bg-zinc-900 w-full sm:w-fit   border-secondary-gray  hover:hue-rotate-90  duration-800ms  hover:duration-1500ms ">
         <motion.h1
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

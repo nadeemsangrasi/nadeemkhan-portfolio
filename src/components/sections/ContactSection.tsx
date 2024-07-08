@@ -1,7 +1,5 @@
-"use client";
 import React from "react";
 import ContactUsForm from "../shared/ContactForm";
-import { motion } from "framer-motion";
 import Heading from "@/components/shared/Heading";
 const ContactSection = (): JSX.Element => {
   return (
