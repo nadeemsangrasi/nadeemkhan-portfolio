@@ -8,9 +8,9 @@ const ParticlesBgWrapper: FC<{ children: React.ReactNode }> = ({
   children,
 }): JSX.Element => {
   return (
-    <ParticlesBackground>
-      <div className="overflow-hidden">{children}</div>
-    </ParticlesBackground>
+    <div className="overflow-hidden overflow-y-hidden bg-black">
+      <ParticlesBackground>{children}</ParticlesBackground>
+    </div>
   );
 };
 
