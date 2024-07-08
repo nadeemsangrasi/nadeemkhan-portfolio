@@ -23,7 +23,7 @@ import spotifyImg from "@/assets/HtmlCSSProjectsImages/spotify.png"
 import portfolioImg from "@/assets/HtmlCSSProjectsImages/portfolio.png"
 import animatedImg from "@/assets/HtmlCSSProjectsImages/animatedSite.png"
 import twoGoodImg from "@/assets/HtmlCSSProjectsImages/twoGoodClone.png"
-import landingPageImg from "@/assets/HtmlCSSProjectsImages/twoGoodClone.png"
+import landingPageImg from "@/assets/HtmlCSSProjectsImages/landingPage.png"
 
 export const heroCardData: HeroCarType[] = [
     { logo: nextLogo, title: "Next.Js", color: "bg-card-1" },
