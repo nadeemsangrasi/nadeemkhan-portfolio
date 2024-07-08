@@ -5,7 +5,7 @@ import githubLogo from "@/assets/logos/github.svg"
 import whiteNextjsLogo from "@/assets/logos/whiteNextjs.svg"
 import reactLogo from "@/assets/logos/reactjs.svg";
 import reduxLogo from "@/assets/logos/redux.svg"
-import typescriptLogo from "@/assets/logos/typescript.svg";
+import typescriptLogo from "@/assets/logos/typeScript.svg"
 import javascriptLogo from "@/assets/logos/javaScript.svg";
 import pythonLogo from "@/assets/logos/python.svg"
 import cssLogo from "@/assets/logos/css3.svg"

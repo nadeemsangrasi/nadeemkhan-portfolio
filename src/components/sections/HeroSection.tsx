@@ -40,7 +40,7 @@ const HeroSection = (): React.JSX.Element => {
             }}
             className="text-5xl md:text-7xl text-primary-white py-6 pt-8 pb-2"
           >
-            Hi, I'm Nadeem
+            Hi, I&apos;m Nadeem
           </motion.h1>
           <motion.h2
             initial={{ x: -60, opacity: 0 }}
@@ -75,7 +75,7 @@ const HeroSection = (): React.JSX.Element => {
             <span className="text-primary-white"> Next.js</span> and
             <span className="text-primary-white"> React.js</span>
             <br />
-            Ready to bring your vision to life? Let's build something
+            Ready to bring your vision to life? Let&apos;s build something
             exceptional together!
           </motion.p>
           <motion.div
