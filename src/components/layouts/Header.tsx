@@ -50,13 +50,13 @@ const Header = (): React.JSX.Element => {
             </li>
             <li
               className={`  sm:text-xl font-medium hover:underline ${
-                pathName === "/experiance"
+                pathName === "/experience"
                   ? "transition all ease 0.5s duration-700 text-secondary-white"
                   : "text-purple"
               }`}
             >
               {" "}
-              <Link href={"/experiance"}>experiance</Link>{" "}
+              <Link href={"/experience"}>experience</Link>{" "}
             </li>
             <li>
               <DropdownMenu>
