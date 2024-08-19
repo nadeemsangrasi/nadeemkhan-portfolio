@@ -8,7 +8,7 @@ import ParticlesBgWrapper from "@/components/ui/ParticlesBgWrapper";
 const raleway = Raleway({ style: "normal", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "nadeemkhan.dev",
+  title: "nadeemkhan",
   description: "nadeem khan portfolio website",
 };
 
