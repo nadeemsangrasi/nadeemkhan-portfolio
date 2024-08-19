@@ -56,7 +56,7 @@ const Header = (): React.JSX.Element => {
               }`}
             >
               {" "}
-              <Link href={"/experiance"}>experiance</Link>{" "}
+              <Link href={"/experiance"}>experience</Link>{" "}
             </li>
             <li>
               <DropdownMenu>
