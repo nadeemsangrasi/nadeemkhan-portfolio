@@ -56,7 +56,7 @@ const Header = (): React.JSX.Element => {
               }`}
             >
               {" "}
-              <Link href={"/experiance"}>experience</Link>{" "}
+              <Link href={"/experience"}>experience</Link>{" "}
             </li>
             <li>
               <DropdownMenu>
@@ -79,8 +79,8 @@ const Header = (): React.JSX.Element => {
                       pathName === "/projects/htmlcssjsProjects"
                         ? "top"
                         : pathName === "/projects/nextjsProjects"
-                        ? "bottom"
-                        : ""
+                          ? "bottom"
+                          : ""
                     }
                   >
                     <Link href={"/projects/htmlcssjsProjects"}>

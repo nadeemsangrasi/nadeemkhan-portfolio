@@ -1,6 +1,4 @@
-"use client";
 import Wrapper from "../shared/Wrapper";
-import { motion } from "framer-motion";
 import Heading from "../shared/Heading";
 import { headingData } from "@/data/data";
 import { HeadingDataType } from "@/types/type";

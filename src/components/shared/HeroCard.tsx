@@ -31,6 +31,8 @@ const HeroCard = ({ logo, title, color }: HeroCarType): React.JSX.Element => {
         <Image
           src={logo}
           alt={title + "Logo"}
+          height={1000}
+          width={1000}
           className="mx-auto sm:mx-0 w-[30%] h-[30%] sm:w-1/2 sm:h-1/2 pt-4"
         />
       </motion.div>

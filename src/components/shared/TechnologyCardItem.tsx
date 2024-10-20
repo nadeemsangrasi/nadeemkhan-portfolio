@@ -21,6 +21,8 @@ const TechnologyCardItem = ({
       <Image
         src={logo}
         alt={title + "Logo"}
+        height={1000}
+        width={1000}
         className="w-[40px] h-[40px] bg-primary-gray rounded-full p-2  "
       />{" "}
       <motion.span

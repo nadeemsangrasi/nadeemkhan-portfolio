@@ -4,6 +4,7 @@ import { PinContainer } from "@/components/ui/3d-pin";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { HtmlCssAndNextjsCardType } from "@/types/type";
+import { urlFor } from "@/sanity/lib/image";
 export function NextProjectCard({
   title,
   snug,
@@ -65,7 +66,7 @@ export function NextProjectCard({
             }}
             className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"
           >
-            <Image src={img} alt="image" />
+            <Image src={img} alt="image" width={1000} height={1000} />
           </motion.div>
         </div>
       </PinContainer>

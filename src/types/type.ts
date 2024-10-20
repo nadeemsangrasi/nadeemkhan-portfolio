@@ -1,50 +1,50 @@
 import { StaticImageData } from "next/image";
 
 export type HeroCarType = {
-    logo: StaticImageData;
-    title: string;
-    color: string
-}
+  logo: any;
+  title: string;
+  color: string;
+};
 export type TechnologyCardItemType = {
-    logo: StaticImageData;
-    title: string;
-}
+  logo: StaticImageData;
+  title: string;
+};
 export type TechnologyCardType = {
-    title: string;
-    data: TechnologyCardItemType[]
-}
+  title: string;
+  data: TechnologyCardItemType[];
+};
 
 export type ExperianceCardType = {
-    domain: string;
-    startDate: string;
-    endDate: string;
-    place: string;
-    companyName: string;
-    detailPara1: string;
-    detailPara2: string;
-}
+  domain: string;
+  startDate: string;
+  endDate: string;
+  place: string;
+  companyName: string;
+  detailPara1: string;
+  detailPara2: string;
+};
 
 export type EductaionCardType = {
-    institution: string;
-    degree: string;
-    fieldOfStudy: string;
-    startDate: string;
-    endDate: string;
-    location: string;
-    description: string;
-}
+  institution: string;
+  degree: string;
+  fieldOfStudy: string;
+  startDate: string;
+  endDate: string;
+  location: string;
+  description: string;
+};
 
 export type HtmlCssAndNextjsCardType = {
-    title: string;
-    snug: string;
-    img: StaticImageData;
-    url: string;
-}
+  title: string;
+  snug: string;
+  img: any;
+  url: string;
+};
 
 export type HeadingDataType = {
-    text: string;
-    color: string;
-    dir: string;
-    value: number;
-    delay: number;
-}
+  text: string;
+  color: string;
+  dir: string;
+  value: number;
+  delay: number;
+};

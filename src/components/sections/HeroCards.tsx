@@ -1,11 +1,12 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import Wrapper from "../shared/Wrapper";
-import { heroCardData } from "@/data/data";
 import { HeroCarType } from "@/types/type";
 import HeroCard from "../shared/HeroCard";
 import { motion } from "framer-motion";
-const HeroCards = (): React.JSX.Element => {
+const HeroCards: FC<{ cardsData: HeroCarType[] }> = ({
+  cardsData,
+}): React.JSX.Element => {
   const [card, setCard] = useState<"card1" | "card2" | "card3" | "card4">(
     "card1"
   );
@@ -69,7 +70,7 @@ const HeroCards = (): React.JSX.Element => {
             ref={cardChangeContainer}
           >
             <div className="h-fit flex gap-6 w-[1680px] sm:w-[1520px]   lg:w-[1250px] mb-4 ">
-              {heroCardData.map(({ logo, title, color }: HeroCarType) => (
+              {cardsData.map(({ logo, title, color }: HeroCarType) => (
                 <HeroCard key={title} logo={logo} title={title} color={color} />
               ))}
             </div>

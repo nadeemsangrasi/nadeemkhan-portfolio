@@ -1,10 +1,11 @@
 import React from "react";
 import { HtmlCssJsProjectCard } from "./HtmlCssJsProjectCard";
 import Wrapper from "@/components/shared/Wrapper";
-import { htmlCssProjectData } from "@/data/data";
 import { HtmlCssAndNextjsCardType } from "@/types/type";
 import Heading from "@/components/shared/Heading";
-const HtmlcssjsProjects = (): JSX.Element => {
+import { fetchHtmlProjects } from "@/lib/FetchHtmlProjects";
+const HtmlcssjsProjects = async (): Promise<JSX.Element> => {
+  const htmlProjects = await fetchHtmlProjects();
   return (
     <Wrapper>
       <div className="my-16">
@@ -17,7 +18,7 @@ const HtmlcssjsProjects = (): JSX.Element => {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          {htmlCssProjectData.map(
+          {htmlProjects.map(
             (
               { title, snug, img, url }: HtmlCssAndNextjsCardType,
               index: number

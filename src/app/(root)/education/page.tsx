@@ -1,12 +1,13 @@
 import React from "react";
 import EducationCard from "./EducationCard";
-import { eductaionCardsData } from "@/data/data";
 import { EductaionCardType } from "@/types/type";
+import { fetchEducation } from "@/lib/FetchEducation";
 
-const EducationPage = (): React.JSX.Element => {
+const EducationPage = async (): Promise<JSX.Element> => {
+  const education = await fetchEducation();
   return (
     <div className=" overflow-hidden sm:px-0 px-4 my-14 ">
-      {eductaionCardsData.map(
+      {education.map(
         (
           {
             institution,
