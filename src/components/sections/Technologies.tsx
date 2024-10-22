@@ -6,6 +6,7 @@ import { fetchTechnologyCards } from "@/lib/FetchTechnologyCard";
 
 const Technologies = async (): Promise<JSX.Element> => {
   const technologyCardData = await fetchTechnologyCards();
+
   return (
     <Wrapper>
       <div className="my-12">

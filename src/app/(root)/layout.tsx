@@ -4,6 +4,7 @@ import "../globals.css";
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
 import ParticlesBgWrapper from "@/components/ui/ParticlesBgWrapper";
+import { ThemeProvider } from "@/context/ThemeProvider";
 
 const raleway = Raleway({ style: "normal", subsets: ["latin"] });
 
@@ -20,11 +21,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.className}>
-        <ParticlesBgWrapper>
-          <Header />
-          {children}
-          <Footer />
-        </ParticlesBgWrapper>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ParticlesBgWrapper>
+            <Header />
+            {children}
+            <Footer />
+          </ParticlesBgWrapper>
+        </ThemeProvider>
       </body>
     </html>
   );

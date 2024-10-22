@@ -12,8 +12,9 @@ const HeroSection = (): React.JSX.Element => {
     "Next.js",
     "React.js",
     "TypeScript",
-    "Shedcn ui",
+    "Node.js",
     "Tailwind CSS",
+    "PostgreSQL",
   ];
 
   const handleDownloadCV = (): void => {
@@ -38,7 +39,7 @@ const HeroSection = (): React.JSX.Element => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="text-5xl md:text-7xl text-primary-white py-6 pt-8 pb-2"
+            className="text-5xl md:text-7xl text-black dark:text-primary-white py-6 pt-8 pb-2 dark:font-normal font-medium"
           >
             Hi, I&apos;m Nadeem
           </motion.h1>
@@ -52,11 +53,14 @@ const HeroSection = (): React.JSX.Element => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="text-xl md:text-3xl text-primary-white py-2 font-medium "
+            className="text-xl md:text-3xl text-black dark:text-primary-white py-2 font-medium"
           >
-            Front-end web developer with <br /> latest stack
+            Full-stack developer with latest <br /> Tech Stack
             <span className="overflow-hidden sm:inline block">
-              <FlipWords words={words} />
+              <FlipWords
+                words={words}
+                className="text-heading-3 dark:text-purple font-medium dark:font-normal"
+              />
             </span>
           </motion.h2>
           <motion.p
@@ -69,14 +73,20 @@ const HeroSection = (): React.JSX.Element => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="text-secondary-gray font-medium text-xl md:text-[1.6rem] leading-9 md:leading-[1.8rem] md:w-[90%]"
+            className="text-gray-700 dark:text-secondary-gray font-medium text-xl md:text-[1.6rem] leading-9 md:leading-[1.8rem] md:w-[90%]"
           >
-            Transforming ideas into engaging web experiences with
-            <span className="text-primary-white"> Next.js</span> and
-            <span className="text-primary-white"> React.js</span>
+            Building dynamic web applications with
+            <span className="text-black dark:text-primary-white"> Next.js</span>
+            ,
+            <span className="text-black dark:text-primary-white"> Node.js</span>
+            , and
+            <span className="text-black dark:text-primary-white">
+              {" "}
+              PostgreSQL
+            </span>
+            .
             <br />
-            Ready to bring your vision to life? Let&apos;s build something
-            exceptional together!
+            Let&apos;s turn your ideas into scalable solutions!
           </motion.p>
           <motion.div
             initial={{ x: -80, opacity: 0 }}
@@ -90,7 +100,7 @@ const HeroSection = (): React.JSX.Element => {
             }}
           >
             <Button title="Download CV" handleDownloadCv={handleDownloadCV} />
-            <span className="text-purple px-2 md:px-6 font-medium text-lg md:inline-block block">
+            <span className="text-heading-3 dark:text-purple font-medium  px-2 md:px-6 text-lg md:inline-block block">
               <Link href={"/experience"}>see experiences</Link>
             </span>
           </motion.div>

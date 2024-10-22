@@ -34,7 +34,7 @@ const TechnologyCardItem = ({
           opacity: { duration: 0.6 },
           duration: 1,
         }}
-        className="font-semibold break-words text-md sm:text-[17px]   "
+        className="text-black dark:text-white font-semibold break-words text-md sm:text-[17px]   "
       >
         {title}
       </motion.span>

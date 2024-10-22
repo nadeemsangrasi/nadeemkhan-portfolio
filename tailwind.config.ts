@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 const colors = require("tailwindcss/colors");
@@ -9,10 +9,10 @@ const {
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -31,16 +31,16 @@ const config = {
         "secondary-gray": "#6f6f6f",
         "primary-white": "#FFFFFF",
         "secondary-white": "#c8c8c8",
-        "seagreen": "#5fb9bo",
-        "purple": "#b292ff",
-        "card-1": "#C3C99E",
-        "card-2": "#7D9CA5",
-        "card-3": "#C2C2C2",
-        "card-4": "#C0E5D7",
+        seagreen: "#5fb9bo",
+        purple: "#b292ff",
+        "card-1": "#A2DFF7",
+        "card-2": "#B2E3B9",
+        "card-3": "#F0E6F6",
+        "card-4": "#FFDFBA",
         "heading-1": "#C69AFF",
         "heading-2": "#9F53FF",
         "heading-3": "#6104D6",
-        "expCard": "#131313"
+        expCard: "#131313",
       },
       keyframes: {
         "accordion-down": {
@@ -100,8 +100,7 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate"), addVariablesForColors],
-
-} satisfies Config
+} satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
@@ -114,4 +113,4 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
-export default config
+export default config;

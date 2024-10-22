@@ -23,7 +23,7 @@ const ParticlesBackground: FC<{ children: React.ReactNode }> = ({
       autoPlay: true,
       background: {
         color: {
-          value: "#000",
+          value: "transparent",
         },
         image: "",
         position: "",

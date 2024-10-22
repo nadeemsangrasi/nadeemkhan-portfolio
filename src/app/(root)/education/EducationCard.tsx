@@ -35,9 +35,12 @@ const EducationCard = ({
           ease: "easeIn",
           duration: 1,
         }}
-        className="text-purple text-xl pb-4 pt-5 sm:pt-0"
+        className="text-heading-2 font-medium dark:text-purple text-xl pb-4 pt-5 sm:pt-0"
       >
-        Institution <span className="text-primary-white">: {institution}</span>
+        Institution{" "}
+        <span className="text-black dark:text-primary-white">
+          : {institution}
+        </span>
       </motion.h2>
       <motion.h2
         initial={{ y: 50, opacity: 0 }}
@@ -49,10 +52,12 @@ const EducationCard = ({
           ease: "easeIn",
           duration: 1,
         }}
-        className="text-purple text-xl pb-4 pt-5 sm:pt-0"
+        className="text-heading-2 font-medium dark:text-purple text-xl pb-4 pt-5 sm:pt-0"
       >
         Field of study{" "}
-        <span className="text-primary-white">: {fieldOfStudy}</span>
+        <span className="text-black dark:text-primary-white">
+          : {fieldOfStudy}
+        </span>
       </motion.h2>
       <motion.h2
         initial={{ y: 50, opacity: 0 }}
@@ -64,9 +69,10 @@ const EducationCard = ({
           ease: "easeIn",
           duration: 1,
         }}
-        className="text-purple text-xl pb-4 pt-5 sm:pt-0"
+        className="text-heading-2 font-medium dark:text-purple text-xl pb-4 pt-5 sm:pt-0"
       >
-        Degree <span className="text-primary-white">: {degree}</span>
+        Degree{" "}
+        <span className="text-black dark:text-primary-white">: {degree}</span>
       </motion.h2>
       <motion.h2
         initial={{ y: 50, opacity: 0 }}
@@ -78,10 +84,10 @@ const EducationCard = ({
           ease: "easeIn",
           duration: 1,
         }}
-        className="text-purple text-xl pb-4 pt-5 sm:pt-0"
+        className="text-heading-2 font-medium dark:text-purple text-xl pb-4 pt-5 sm:pt-0"
       >
         start{" "}
-        <span className="text-primary-white">
+        <span className="text-black dark:text-primary-white">
           : {dayjs(startDate).format("MMM D, YYYY")}
         </span>
       </motion.h2>
@@ -95,13 +101,13 @@ const EducationCard = ({
           ease: "easeIn",
           duration: 1,
         }}
-        className="text-purple text-xl pb-4 pt-5 sm:pt-0"
+        className="text-heading-2 font-medium dark:text-purple text-xl pb-4 pt-5 sm:pt-0"
       >
         end{" "}
         {dayjs(endDate).format("MMM D, YYYY") == "Invalid Date" ? (
-          <span className="text-primary-white">: Present</span>
+          <span className="text-black dark:text-primary-white">: Present</span>
         ) : (
-          <span className="text-primary-white">
+          <span className="text-black dark:text-primary-white">
             : {dayjs(endDate).format("MMM D, YYYY")}
           </span>
         )}
@@ -116,9 +122,10 @@ const EducationCard = ({
           ease: "easeIn",
           duration: 1,
         }}
-        className="text-purple text-xl pb-4 pt-5 sm:pt-0"
+        className="text-heading-2 font-medium dark:text-purple text-xl pb-4 pt-5 sm:pt-0"
       >
-        Location <span className="text-primary-white">: {location}</span>
+        Location{" "}
+        <span className="text-black dark:text-primary-white">: {location}</span>
       </motion.h2>
       <motion.p
         initial={{ y: 50, opacity: 0 }}
@@ -130,7 +137,7 @@ const EducationCard = ({
           ease: "easeIn",
           duration: 1,
         }}
-        className="text-secondary-white font-light  text-[1rem] sm:text-xl pb-4"
+        className="text-black dark:text-secondary-white font-medium dark:font-light  text-[1rem] sm:text-xl pb-4"
       >
         {description}
       </motion.p>

@@ -46,7 +46,7 @@ const HeroCard = ({ logo, title, color }: HeroCarType): React.JSX.Element => {
           ease: "easeIn",
           duration: 1,
         }}
-        className="font-bold text-3xl px-8 py-4"
+        className="text-black font-bold text-3xl px-8 py-4 "
       >
         {title}
       </motion.h1>

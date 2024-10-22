@@ -14,6 +14,7 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ThemeMood } from "../shared/ThemeMood";
 
 const Header = (): React.JSX.Element => {
   const path: string = usePathname();
@@ -50,7 +51,7 @@ const Header = (): React.JSX.Element => {
             </li>
             <li
               className={`  sm:text-xl font-medium hover:underline ${
-                pathName === "/experiance"
+                pathName === "/experience"
                   ? "transition all ease 0.5s duration-700 text-secondary-white"
                   : "text-purple"
               }`}
@@ -119,6 +120,7 @@ const Header = (): React.JSX.Element => {
             <Image src={mailIcon} alt="mailIcon" />
           </Link>
         </div>
+        <ThemeMood />
       </div>
     </Wrapper>
   );

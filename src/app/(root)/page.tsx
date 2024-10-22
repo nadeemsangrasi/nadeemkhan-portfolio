@@ -9,7 +9,7 @@ export default function Home(): React.JSX.Element {
   return (
     <div>
       <HeroSection />
-      <InfiniteScroller text=" | Building Secure, Beautiful, Dynamic Sites  | Next.js Expert | Crafting User-Centric Experiences | Responsive Frontend Developer | React.js Pro " />
+      <InfiniteScroller text=" | Building Secure, Beautiful, Dynamic Sites | Full-Stack Developer | Next.js Expert | Crafting User-Centric Experiences | Responsive Web Developer | React & Node.js Pro " />
       <HeroCardSection />
       <HeadingSection />
       <Technologies />

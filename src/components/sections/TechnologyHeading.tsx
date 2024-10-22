@@ -13,7 +13,7 @@ const TechnologyHeading = () => {
         ease: "easeIn",
         duration: 1,
       }}
-      className="pb-10 text-4xl text-center sm:text-left sm:text-5xl break-words  text-primary-white"
+      className="pb-10 text-4xl text-center sm:text-left sm:text-5xl break-words  text-black dark:text-primary-white"
     >
       These are the <br /> technologies I&apos;ve been using{" "}
     </motion.h1>

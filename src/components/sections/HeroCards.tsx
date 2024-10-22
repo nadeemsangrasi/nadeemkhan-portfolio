@@ -58,9 +58,13 @@ const HeroCards: FC<{ cardsData: HeroCarType[] }> = ({
           }}
           className="mx-auto text-center sm:text-left my-4 md:my-0 w-full h-full  sm:w-[400px] md:h-[250px] p-4 rounded-3xl"
         >
-          <h4 className="text-secondary-gray text-xl py-2">1 year of</h4>
-          <h1 className="text-7xl text-primary-white font-bold py-2">XP</h1>
-          <h4 className="text-secondary-gray text-xl">
+          <h4 className="text-gray-700 dark:text-secondary-gray text-xl py-2">
+            1 year of
+          </h4>
+          <h1 className="text-7xl text-black dark:text-primary-white font-bold py-2">
+            XP
+          </h1>
+          <h4 className="text-gray-700 dark:text-secondary-gray text-xl">
             with the most popular ecosystem in frontend
           </h4>
         </motion.div>
@@ -79,8 +83,8 @@ const HeroCards: FC<{ cardsData: HeroCarType[] }> = ({
             <div
               className={` h-[20px] ${
                 card == "card1"
-                  ? "w-[100px] bg-primary-white "
-                  : "w-[30px] bg-secondary-gray"
+                  ? "w-[100px] bg-black dark:bg-primary-white "
+                  : "w-[30px] bg-gray-700 dark:bg-secondary-gray"
               } rounded-full transition-all ease 0.5s duration-500`}
               onClick={() => {
                 setCard("card1");
@@ -90,8 +94,8 @@ const HeroCards: FC<{ cardsData: HeroCarType[] }> = ({
             <div
               className={` h-[20px] ${
                 card == "card2"
-                  ? "w-[100px] bg-primary-white "
-                  : "w-[30px] bg-secondary-gray"
+                  ? "w-[100px] bg-black dark:bg-primary-white "
+                  : "w-[30px]  bg-gray-700 dark:bg-secondary-gray"
               } rounded-full transition-all ease 0.5s duration-500`}
               onClick={() => {
                 setCard("card2");

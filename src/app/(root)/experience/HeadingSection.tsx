@@ -23,10 +23,10 @@ const HeadingSection = () => {
       }}
       className="w-full sm:w-1/2 mx-auto  text-center my-16"
     >
-      <p className="text-secondary-gray font-medium text-xl md:text-2xl leading-9  ">
+      <p className="text-gray-700 dark:text-secondary-gray font-medium text-xl md:text-2xl leading-9  ">
         &lt; Here, you can know me a little more and see my whole experience as
         a{" "}
-        <span className="text-primary-white font-normal">
+        <span className="text-black dark:text-primary-white font-normal">
           Front-End Software Engineer.
         </span>
         /&gt;

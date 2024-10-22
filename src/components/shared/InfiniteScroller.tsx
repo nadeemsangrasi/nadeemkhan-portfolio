@@ -58,7 +58,7 @@ const InfiniteScroller = ({ text }: { text: string }) => {
         {[...Array(2)].map((_, i) => (
           <span
             key={i}
-            className="uppercase text-6xl sm:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
+            className="uppercase text-6xl sm:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 dark:from-blue-500 via-purple-500 to-pink-600 dark:to-pink-500"
           >
             {text}
           </span>
