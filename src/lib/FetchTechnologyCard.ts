@@ -9,6 +9,10 @@ export const fetchTechnologyCards = async () => {
     "logo": logo.asset->url
   }
 }`;
-  const heroCards = await Client.fetch(query);
-  return heroCards;
+  const technologyCards = await Client.fetch(query);
+  const sortedTechnologyCards = technologyCards.sort(
+    (a: { _createdAt: string }, b: { _createdAt: string }) =>
+      new Date(b._createdAt).getTime() - new Date(a._createdAt).getTime()
+  );
+  return sortedTechnologyCards;
 };

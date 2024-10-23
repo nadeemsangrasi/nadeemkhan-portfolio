@@ -73,7 +73,7 @@ const HeroCards: FC<{ cardsData: HeroCarType[] }> = ({
             className=" w-[900px] overflow-x-scroll overflow-y-hidden scrollbar-hide"
             ref={cardChangeContainer}
           >
-            <div className="h-fit flex gap-6 w-[1680px] sm:w-[1520px]   lg:w-[1250px] mb-4 ">
+            <div className="h-fit flex gap-6 w-[1680px] sm:w-[1520px]   lg:min-w-[1250px] mb-4 ">
               {cardsData.map(({ logo, title, color }: HeroCarType) => (
                 <HeroCard key={title} logo={logo} title={title} color={color} />
               ))}

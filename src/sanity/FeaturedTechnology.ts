@@ -14,10 +14,10 @@ export const FeaturedTechnology = {
       title: "Background Color",
       options: {
         list: [
-          { title: "Sage Green", value: "bg-card-1" },
-          { title: "Slate Blue", value: "bg-card-2" },
-          { title: "Light Gray", value: "bg-card-3" },
-          { title: "Pale Mint", value: "bg-card-4" },
+          { title: "Light Sky Blue", value: "bg-card-1" },
+          { title: "Pale Green", value: "bg-card-2" },
+          { title: "Lavender Mist", value: "bg-card-3" },
+          { title: "Peach", value: "bg-card-4" },
         ],
         layout: "dropdown",
       },

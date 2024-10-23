@@ -11,7 +11,7 @@ const Technologies = async (): Promise<JSX.Element> => {
     <Wrapper>
       <div className="my-12">
         <TechnologyHeading />
-        <div className="py-8 text-primary-white text-center flex flex-wrap gap-8 justify-between">
+        <div className="py-8 text-primary-white text-center flex flex-wrap gap-14 ">
           {technologyCardData.map(
             ({ title, data }: TechnologyCardType, index: number) => (
               <TechnologyCard key={index} title={title} data={data} />

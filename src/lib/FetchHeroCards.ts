@@ -9,5 +9,9 @@ export const fetchHeroCards = async () => {
     }`;
 
   const heroCards = await Client.fetch(query);
-  return heroCards;
+  const sortedHeroCards = heroCards.sort(
+    (a: { _createdAt: string }, b: { _createdAt: string }) =>
+      new Date(b._createdAt).getTime() - new Date(a._createdAt).getTime()
+  );
+  return sortedHeroCards;
 };
