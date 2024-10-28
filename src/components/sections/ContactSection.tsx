@@ -1,9 +1,10 @@
 import React from "react";
 import ContactUsForm from "../shared/ContactForm";
 import Heading from "@/components/shared/Heading";
+import Wrapper from "../shared/Wrapper";
 const ContactSection = (): JSX.Element => {
   return (
-    <div className="my-8">
+    <Wrapper>
       <Heading
         text="Contact Now"
         color="text-heading-3"
@@ -15,7 +16,7 @@ const ContactSection = (): JSX.Element => {
       <div className="my-16 px-4 sm:px-0">
         <ContactUsForm />
       </div>
-    </div>
+    </Wrapper>
   );
 };
 
