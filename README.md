@@ -9,7 +9,7 @@ Welcome to my personal portfolio website, built to showcase my skills and projec
 - **Tailwind CSS**: A utility-first CSS framework that allows for rapid UI development with a focus on design consistency.
 - **Framer Motion**: An open-source library used to create smooth and visually appealing animations in React applications.
 - **Aceternity UI**: Utilizes animated components to enhance user interaction and visual appeal.
-- 
+- **Sanity**:For content management 
 
 ## Features
 
