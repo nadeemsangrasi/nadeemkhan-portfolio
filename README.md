@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website, built to showcase my skills and projects as a frontend developer. This project utilizes modern web development technologies to create a sleek and dynamic user experience.
 
-## Technologies Used
+## Technologies Used 
 
 - **Next.js**: A powerful React framework that enables server-side rendering and static site generation.
 - **TypeScript**: A superset of JavaScript that adds static types, improving code quality and development efficiency.
