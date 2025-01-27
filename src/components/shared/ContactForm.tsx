@@ -184,7 +184,7 @@ function ContactUsForm(): JSX.Element {
           className="bg-gradient-to-br relative group/btn from-zinc-900 block w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset]"
           type="submit"
         >
-          Sand Message &rarr;
+          Send Message &rarr;
           <BottomGradient />
         </motion.button>
 
